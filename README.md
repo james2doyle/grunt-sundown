@@ -1,4 +1,5 @@
-# grunt-sundown
+grunt-sundown
+=============
 
 > a grunt wrapper for [robotskirt](https://github.com/benmills/robotskirt)([Sundown](https://github.com/vmg/sundown)) - a C implementation of [Markdown](http://daringfireball.net/projects/markdown/)
 
