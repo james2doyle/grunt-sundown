@@ -12,7 +12,7 @@
 
   var rs = require('robotskirt');
 
-  grunt.registerMultiTask('sundown', 'a grunt wrapper for robotskirt(sundown)', function() {
+  grunt.registerMultiTask('sundown', 'a grunt wrapper for robotskirt(Sundown) - a C implementation of Markdown', function() {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
       extensions: {

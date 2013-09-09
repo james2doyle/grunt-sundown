@@ -1,6 +1,6 @@
 {
   "name": "grunt-sundown",
-  "description": "a grunt wrapper for robotskirt(sundown)",
+  "description": "a grunt wrapper for robotskirt(Sundown) - a C implementation of Markdown",
   "version": "0.1.0",
   "homepage": "https://github.com/james2doyle/grunt-sundown",
   "author": {
@@ -39,6 +39,10 @@
     "grunt": "~0.4.1"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "markdown",
+    "sundown",
+    "robotskirt",
+    "C"
   ]
 }
