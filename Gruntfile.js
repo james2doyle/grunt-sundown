@@ -32,20 +32,17 @@ module.exports = function(grunt) {
     sundown: {
       default_options: {
         options: {
+          extensions: {
+            fenced_code: true
+          },
+          render_flags: {
+            skip_images: true
+          }
         },
         files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123'],
-        },
-      },
-      custom_options: {
-        options: {
-          separator: ': ',
-          punctuation: ' !!!',
-        },
-        files: {
-          'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123'],
-        },
-      },
+          'tmp/default_options.html': ['test/fixtures/testing.md', 'test/fixtures/123.md'],
+        }
+      }
     },
 
     // Unit tests.
