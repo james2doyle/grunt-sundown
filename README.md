@@ -26,16 +26,18 @@ In your project's Gruntfile, add a section named `sundown` to the data object pa
 ```js
 grunt.initConfig({
   sundown: {
-    options: {
-      extensions: {
-        fenced_code: true
+    target: {
+      options: {
+        extensions: {
+          fenced_code: true
+        },
+        render_flags: {
+          skip_html: true
+        }
       },
-      render_flags: {
-        skip_html: true
+      files: {
+        'output.html': ['input1.md', 'input2.md']
       }
-    },
-    files: {
-      'output.html': ['input1.md', 'input2.md']
     }
   }
 })
