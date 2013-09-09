@@ -27,10 +27,15 @@ In your project's Gruntfile, add a section named `sundown` to the data object pa
 grunt.initConfig({
   sundown: {
     options: {
-      // Task-specific options go here.
+      extensions: {
+        fenced_code: true
+      },
+      render_flags: {
+        skip_html: true
+      }
     },
-    your_target: {
-      // Target-specific file lists and/or options go here.
+    files: {
+      'output.html': ['input1.md', 'input2.md']
     }
   }
 })
@@ -61,7 +66,7 @@ options: {
     use_xhtml: false,
     escape: false
   },
-  separator: '\n\n'
+  separator: '\n\n' // concat option for multiple files
 }
 ```
 
@@ -147,25 +152,3 @@ Markdown document had newlines (by default, Markdown ignores these newlines).
 ### More Information
 
 You can try your luck on the [Sundown](https://github.com/vmg/sundown) homepage. Or check out some of the [other wrappers](https://github.com/vmg/sundown#bindings).
-
-### Usage Examples
-
-#### Default Usage
-
-```js
-grunt.initConfig({
-  sundown: {
-    options: {
-      extensions: {
-        fenced_code: true
-      },
-      render_flags: {
-        skip_html: true
-      }
-    },
-    files: {
-      'output.html': ['input1.md', 'input2.md'],
-    }
-  }
-});
-```
